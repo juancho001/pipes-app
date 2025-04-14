@@ -45,4 +45,5 @@ For more information on using the REST Countries, including documentation, visit
 # Table of Contents
 ```bash
 1. Configuraciones iniciales
+2. Configuración de las rutas y Creación de los componentes
 ```
