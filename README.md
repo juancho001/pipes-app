@@ -46,4 +46,5 @@ For more information on using the REST Countries, including documentation, visit
 ```bash
 1. Configuraciones iniciales
 2. Configuración de las rutas y Creación de los componentes
+3. Configurando el NavBar y las Rutas
 ```
