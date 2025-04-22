@@ -47,7 +47,8 @@ For more information on using the REST Countries, including documentation, visit
 1. Configuraciones iniciales
 2. Configuración de las rutas y Creación de los componentes
 3. Configurando el NavBar y las Rutas
-4. Trabajando con Pipes de Angular basados en String
-5. Trabajando con Pipes de Angular basados en Números
-6. Trabajando con Pipes de Angular basados en Fecha
+4. Trabajando con Pipes de Angular basados en String (LowerCasePipe,UpperCasePipe,TitleCasePipe)
+5. Trabajando con Pipes de Angular basados en Números (DecimalPipe,PercentPipe,CurrencyPipe)
+6. Trabajando con Pipes de Angular basados en Fecha (DatePipe)
+7. Cambiar de Idiomas en Angular (LOCALE)
 ```

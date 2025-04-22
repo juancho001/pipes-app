@@ -2,6 +2,7 @@
   <h1 class="text-2xl font-bold">Basic Pipes</h1>
   <h3 class="text-xl font-thin">Pipes included in Angular</h3>
 </section>
+
 <div class="divider my-10"></div>
 <div class="stats stats-vertical  lg:stats-horizontal flex shadow my-5">
   <div class="stat">
@@ -64,7 +65,6 @@
 
 
 <div class="divider my-10"></div>
-
 <div class="stats stats-vertical  lg:stats-horizontal flex shadow my-5">
   <div class="stat">
     <div class="stat-figure text-secondary">
@@ -99,8 +99,8 @@
           d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
       </svg>
     </div>
-    <div class="stat-title text-2xl font-bold">Date | shortDate </div>
-    <div class="stat-value">{{ customDate() | date:"shortDate":"M/d/yy, h:mm a"}}</div>
+    <div class="stat-title text-2xl font-bold">Date | ShortDate </div>
+    <div class="stat-value">{{ customDate() | date:"shortDate"}}</div>
     <div class="stat-desc">{{ customDate() }}</div>
   </div>
 
@@ -118,14 +118,13 @@
           d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
       </svg>
     </div>
-    <div class="stat-title text-2xl font-bold">Date | fullDate</div>
-    <div class="stat-value">{{ customDate() | date:'fullDate':'EEEE, MMMM d, y'}}</div>
+    <div class="stat-title text-2xl font-bold">Date | FullDate</div>
+    <div class="stat-value">{{ customDate() | date:'fullDate'}}</div>
     <div class="stat-desc">{{ customDate() }}</div>
   </div>
 </div>
 
 <div class="divider my-10"></div>
-
 <div class="stats stats-vertical  lg:stats-horizontal flex shadow my-5">
   <div class="stat">
     <div class="stat-figure text-secondary">
@@ -141,7 +140,7 @@
           d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
       </svg>
     </div>
-    <div class="stat-title text-2xl font-bold">Date Pipe</div>
+    <div class="stat-title text-2xl font-bold">Date Pipe Format YYYY-MM-DD</div>
     <div class="stat-value">{{ customDate() | date:"yyyy-MM-dd"}}</div>
     <div class="stat-desc">{{ customDate() }}</div>
   </div>
@@ -160,7 +159,7 @@
           d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
       </svg>
     </div>
-    <div class="stat-title text-2xl font-bold">Date Pipe</div>
+    <div class="stat-title text-2xl font-bold">Date Pipe Format HH:MM:SS</div>
     <div class="stat-value">{{ customDate() | date:"HH:MM:SS"}}</div>
     <div class="stat-desc">{{ customDate() }}</div>
   </div>
@@ -179,8 +178,15 @@
           d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
       </svg>
     </div>
-    <div class="stat-title text-2xl font-bold">Date Pipe</div>
+    <div class="stat-title text-2xl font-bold">Date Pipe Format EEEE d, MMMM</div>
     <div class="stat-value">{{ customDate() | date:'EEEE d, MMMM'}}</div>
     <div class="stat-desc">{{ customDate() }}</div>
   </div>
+</div>
+
+<div class="divider my-10"></div>
+<div class="gap-2 flex-row">
+  <h1 class="text-2xl font-bold">Locale Actual : <span class="badge badge-secondary">{{currentLocale | uppercase }}</span></h1>
+  <button class="btn btn-secondary m-4" (click)="changeLocale('en')">Change to English</button>
+  <button class="btn btn-secondary m-4" (click)="changeLocale('es')">Cambiar a Español</button>
 </div>
