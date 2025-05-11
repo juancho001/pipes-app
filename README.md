@@ -53,4 +53,5 @@ For more information on using the REST Countries, including documentation, visit
 7. Cambiar de Idiomas en Angular ( LOCALE )
 8. Proyección de contenido ( ng-content )
 9. Uso de pipes no comunes ( CardComponent, I18nSelectPipe, I18nPluralPipe,SlicePipe,JsonPipe, KeyValuePipe, TitleCasePipe,AsyncPipe )
+10. Uso de Pipes Personalizados
 ```
